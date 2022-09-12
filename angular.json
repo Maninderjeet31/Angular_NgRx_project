@@ -10,7 +10,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
-          "strict": true
+          "strict": false
         }
       },
       "root": "",
@@ -30,9 +30,11 @@
               "src/assets"
             ],
             "styles": [
+			  "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+			"preserveSymlinks": true
           },
           "configurations": {
             "production": {
