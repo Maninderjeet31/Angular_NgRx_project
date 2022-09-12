@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
+import { map, Observable, tap } from 'rxjs';
+
 
 import { CoffeeService } from './coffee.service';
 import { Coffee } from './coffee.model';
@@ -32,7 +33,7 @@ export class CoffeeComponent implements OnInit {
 		this.coffeeService.getCoffeeList().subscribe(
 			value2 => console.log(value2)
 		)
-
+		
 		this.coffees$ = this.store.select(store => store.coffees.coffees);
 		this.loading$ = this.store.select(store => store.coffees.loading);
 		// this.error$ = this.store.select(store => store.coffees.error);

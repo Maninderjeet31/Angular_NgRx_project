@@ -8,26 +8,7 @@ export interface State {
 }
 
 const initialState: State = {
-	coffees: [
-		{
-			"id":5024,
-			"uid":"d8f2e4e0-b025-4aa2-b05a-775aa1751b5e",
-			"blend_name":"Joe Treat",
-			"origin":"Mount Elgon, Uganda",
-			"variety":"SL34",
-			"notes":"crisp, big, honeydew, butter, smokey",
-			"intensifier":"juicy"
-		},
-		{
-			"id":9022,
-			"uid":"4d248bd7-707b-4779-8cd9-7305467c7240",
-			"blend_name":"Holiday Breaker",
-			"origin":"Jinotega, Nicaragua",
-			"variety":"S288",
-			"notes":"mild, juicy, grassy, lemon verbena, hops",
-			"intensifier":"crisp"
-		}
-	],
+	coffees: [],
 	loading: false,
 	error: ''
 }

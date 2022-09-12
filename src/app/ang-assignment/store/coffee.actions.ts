@@ -23,10 +23,3 @@ export class GetCoffeeFail implements Action {
 
 export type CoffeeAction = 
 	GetCoffee | GetCoffeeSuccess | GetCoffeeFail;
-
-
-
-export const fetchCoffee = createAction(
-	'[Coffee Page] Fetch Coffee',
-	props<{ coffees: Coffee[]}>()
-)
